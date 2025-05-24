@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EmptyCup</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <img src="{{ url_for('static', filename='icons/logo-small 1.svg') }}" alt="Left Icon" class="header-icon" />
+      <h1 class="app-name">EmptyCup</h1>
+      <img src="{{ url_for('static', filename='icons/menu.svg') }}" alt="Right Icon" class="header-icon" />
+    </div>
+    <nav class="navbar">
+      <img src="{{ url_for('static', filename='icons/contacts.svg') }}" alt="Contacts" />
+      <img src="{{ url_for('static', filename='icons/gallery.svg') }}" alt="Gallery" />
+      <img src="{{ url_for('static', filename='icons/Group 8.svg') }}" alt="Map" />
+      <img id="nav-shortlist-btn" src="{{ url_for('static', filename='icons/Group 10 (1).svg') }}" alt="Shortlist Filter" style="cursor:pointer" />
+      <img src="{{ url_for('static', filename='icons/sort.svg') }}" alt="Sort" />
+    </nav>
+  </header>
+
+  <main class="items-container" id="designers-container">
+    
+  </main>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
